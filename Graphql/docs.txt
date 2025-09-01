@@ -1,0 +1,24 @@
+how to call this api :
+
+First generate the token for authentication :
+
+using url : http://localhost:9090/api/auth/login
+
+in body raw section :
+{
+  "username": "Gaurav",
+  "password":"Igrs@123"
+} 
+
+use application/json 
+
+
+then generate token like  : 
+
+{
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJHYXVyYXYiLCJpYXQiOjE3NTY3MTA2NzIsImV4cCI6MTc1Njc5NzA3Mn0.w1uISdV72vyzLTXkdDAXITtYx5ICqlO1N5Lia6C3kpk"
+}
+
+
+
+Now access the using this token code choose Authorization section in postman and choose :bearer token and added gnerated token to access data from graphQl Api 
